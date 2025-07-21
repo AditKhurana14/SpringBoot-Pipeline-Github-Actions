@@ -34,7 +34,7 @@ jobs:
       run: |
         mvn test
         echo "Test Completed"
-        |
+        
 
     - name: Jacoco File
       run: mvn clean verify
