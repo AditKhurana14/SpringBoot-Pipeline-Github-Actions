@@ -33,10 +33,15 @@ jobs:
     - name: Run Tests with Maven
       run:  mvn test
 
+    - name: Jacoco File
+      run: mvn clean verify
+
     - name: Upload Jar
       uses: actions/upload-artifact@v4
       with:
         name: Spring-bootA-App
         path: target/*.jar
+
+
 
 
