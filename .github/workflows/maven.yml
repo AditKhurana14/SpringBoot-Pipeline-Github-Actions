@@ -45,6 +45,13 @@ jobs:
         name: Spring-bootA-App
         path: target/*.jar
 
+    - name: Create Docker Image
+      run:  |
+        echo "Creating Docker Image"
+        docker build -t spring-boot-app:latest
+        echo "Creating Docker Image"
+
+        
 
 
 
